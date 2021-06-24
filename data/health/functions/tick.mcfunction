@@ -1,87 +1,408 @@
-bossbar set 0 players @a[scores={cycl=..50}]
-scoreboard players set @a[team=] hpxp 0
-scoreboard players set @a[team=] khp 0
-team join hpteam @a[team=]
-scoreboard players add @a[scores={totk=1..}] kihp 1
-scoreboard players add @a[scores={cycl=..50}] cycl 1
-scoreboard players set @a[scores={kihp=1..}] cycl 0
-scoreboard players add @a[scores={kihp=1..}] khp 1
-scoreboard players set @a[scores={kihp=1..}] kihp 0
-scoreboard players set @a[scores={totk=1..}] totk 0
-execute as @a[scores={khp=40..,hpxp=0}] run scoreboard players set @s hpxp 100
-execute as @a[scores={hpxp=100}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=100}] run scoreboard players set @s hpxp 1
-execute as @a[scores={khp=50..,hpxp=1}] run scoreboard players set @s hpxp 200
-execute as @a[scores={hpxp=200}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=200}] run scoreboard players set @s hpxp 2
-execute as @a[scores={khp=60..,hpxp=2}] run scoreboard players set @s hpxp 300
-execute as @a[scores={hpxp=300}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=300}] run scoreboard players set @s hpxp 3
-execute as @a[scores={khp=70..,hpxp=3}] run scoreboard players set @s hpxp 400
-execute as @a[scores={hpxp=400}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=400}] run scoreboard players set @s hpxp 4
-execute as @a[scores={khp=70..,hpxp=4}] run scoreboard players set @s hpxp 500
-execute as @a[scores={hpxp=500}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=500}] run scoreboard players set @s hpxp 5
-execute as @a[scores={khp=70..,hpxp=5}] run scoreboard players set @s hpxp 600
-execute as @a[scores={hpxp=600}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=600}] run scoreboard players set @s hpxp 6
-execute as @a[scores={khp=70..,hpxp=6}] run scoreboard players set @s hpxp 700
-execute as @a[scores={hpxp=700}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=700}] run scoreboard players set @s hpxp 7
-execute as @a[scores={khp=70..,hpxp=7}] run scoreboard players set @s hpxp 800
-execute as @a[scores={hpxp=800}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=800}] run scoreboard players set @s hpxp 8
-execute as @a[scores={khp=100..,hpxp=8}] run scoreboard players set @s hpxp 900
-execute as @a[scores={hpxp=900}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=900}] run scoreboard players set @s hpxp 9
-execute as @a[scores={khp=100..,hpxp=9}] run scoreboard players set @s hpxp 1000
-execute as @a[scores={hpxp=1000}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=1000}] run scoreboard players set @s hpxp 10
-execute as @a[scores={khp=150..,hpxp=10}] run scoreboard players set @s hpxp 1100
-execute as @a[scores={hpxp=1100}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=1100}] run scoreboard players set @s hpxp 11
-execute as @a[scores={khp=150..,hpxp=11}] run scoreboard players set @s hpxp 1200
-execute as @a[scores={hpxp=1200}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=1200}] run scoreboard players set @s hpxp 12
-execute as @a[scores={khp=200..,hpxp=12}] run scoreboard players set @s hpxp 1300
-execute as @a[scores={hpxp=1300}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=1300}] run scoreboard players set @s hpxp 13
-execute as @a[scores={khp=200..,hpxp=13}] run scoreboard players set @s hpxp 1400
-execute as @a[scores={hpxp=1400}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=1400}] run scoreboard players set @s hpxp 14
-execute as @a[scores={khp=200..,hpxp=14}] run scoreboard players set @s hpxp 1500
-execute as @a[scores={hpxp=1500}] run scoreboard players set @s khp 0
-execute as @a[scores={hpxp=1500}] run scoreboard players set @s hpxp 15
-execute as Woflje store result bossbar 0 value run scoreboard players get Woflje khp
-execute as @a[scores={hpxp=0}] run bossbar set 0 max 40
-execute as @a[scores={hpxp=1}] run bossbar set 0 max 50
-execute as @a[scores={hpxp=2}] run bossbar set 0 max 60
-execute as @a[scores={hpxp=3}] run bossbar set 0 max 70
-execute as @a[scores={hpxp=4}] run bossbar set 0 max 70
-execute as @a[scores={hpxp=5}] run bossbar set 0 max 70
-execute as @a[scores={hpxp=6}] run bossbar set 0 max 70
-execute as @a[scores={hpxp=7}] run bossbar set 0 max 70
-execute as @a[scores={hpxp=8}] run bossbar set 0 max 100
-execute as @a[scores={hpxp=9}] run bossbar set 0 max 100
-execute as @a[scores={hpxp=10}] run bossbar set 0 max 150
-execute as @a[scores={hpxp=11}] run bossbar set 0 max 150
-execute as @a[scores={hpxp=12}] run bossbar set 0 max 200
-execute as @a[scores={hpxp=13}] run bossbar set 0 max 200
-execute as @a[scores={hpxp=14}] run bossbar set 0 max 200
-execute as @a[scores={hpxp=0}] run attribute @s minecraft:generic.max_health base set 10
-execute as @a[scores={hpxp=1}] run attribute @s minecraft:generic.max_health base set 12
-execute as @a[scores={hpxp=2}] run attribute @s minecraft:generic.max_health base set 14
-execute as @a[scores={hpxp=3}] run attribute @s minecraft:generic.max_health base set 16
-execute as @a[scores={hpxp=4}] run attribute @s minecraft:generic.max_health base set 18
-execute as @a[scores={hpxp=5}] run attribute @s minecraft:generic.max_health base set 20
-execute as @a[scores={hpxp=6}] run attribute @s minecraft:generic.max_health base set 22
-execute as @a[scores={hpxp=7}] run attribute @s minecraft:generic.max_health base set 24
-execute as @a[scores={hpxp=8}] run attribute @s minecraft:generic.max_health base set 26
-execute as @a[scores={hpxp=9}] run attribute @s minecraft:generic.max_health base set 28
-execute as @a[scores={hpxp=10}] run attribute @s minecraft:generic.max_health base set 30
-execute as @a[scores={hpxp=11}] run attribute @s minecraft:generic.max_health base set 32
-execute as @a[scores={hpxp=12}] run attribute @s minecraft:generic.max_health base set 34
-execute as @a[scores={hpxp=13}] run attribute @s minecraft:generic.max_health base set 36
-execute as @a[scores={hpxp=14}] run attribute @s minecraft:generic.max_health base set 38
-execute as @a[scores={hpxp=15}] run attribute @s minecraft:generic.max_health base set 40
+scoreboard players set @a[tag=!hpinit] hpxp 0
+scoreboard players set @a[tag=!hpinit] hplvl 0
+scoreboard players set @a[tag=!hpinit] hpcd 0
+tag @a[tag=!hpinit] add hpinit
+scoreboard players add @a[scores={totk=1..},tag=!hpmax] hpxp 1
+scoreboard players add @a[scores={hpcd=..50},tag=!hpmax] hpcd 1
+scoreboard players set @a[scores={totk=1..},tag=!hpmax] hpcd 0
+scoreboard players set @a[scores={totk=1..},tag=!hpmax] totk 0
+scoreboard players set @a[scores={hpxp=40..,hplvl=0}] hplvl 100
+scoreboard players set @a[scores={hplvl=100}] hpxp 0
+scoreboard players set @a[scores={hplvl=100}] hplvl 1
+execute as @a[scores={hplvl=0}] run attribute @s minecraft:generic.max_health base set 10
+scoreboard players set @a[scores={hpxp=50..,hplvl=1}] hplvl 200
+scoreboard players set @a[scores={hplvl=200}] hpxp 0
+scoreboard players set @a[scores={hplvl=200}] hplvl 2
+execute as @a[scores={hplvl=1}] run attribute @s minecraft:generic.max_health base set 12
+scoreboard players set @a[scores={hpxp=60..,hplvl=2}] hplvl 300
+scoreboard players set @a[scores={hplvl=300}] hpxp 0
+scoreboard players set @a[scores={hplvl=300}] hplvl 3
+execute as @a[scores={hplvl=2}] run attribute @s minecraft:generic.max_health base set 14
+scoreboard players set @a[scores={hpxp=70..,hplvl=3}] hplvl 400
+scoreboard players set @a[scores={hplvl=400}] hpxp 0
+scoreboard players set @a[scores={hplvl=400}] hplvl 4
+execute as @a[scores={hplvl=3}] run attribute @s minecraft:generic.max_health base set 16
+scoreboard players set @a[scores={hpxp=70..,hplvl=4}] hplvl 500
+scoreboard players set @a[scores={hplvl=500}] hpxp 0
+scoreboard players set @a[scores={hplvl=500}] hplvl 5
+execute as @a[scores={hplvl=4}] run attribute @s minecraft:generic.max_health base set 18
+scoreboard players set @a[scores={hpxp=70..,hplvl=5}] hplvl 600
+scoreboard players set @a[scores={hplvl=600}] hpxp 0
+scoreboard players set @a[scores={hplvl=600}] hplvl 6
+execute as @a[scores={hplvl=5}] run attribute @s minecraft:generic.max_health base set 20
+scoreboard players set @a[scores={hpxp=70..,hplvl=6}] hplvl 700
+scoreboard players set @a[scores={hplvl=700}] hpxp 0
+scoreboard players set @a[scores={hplvl=700}] hplvl 7
+execute as @a[scores={hplvl=6}] run attribute @s minecraft:generic.max_health base set 22
+scoreboard players set @a[scores={hpxp=70..,hplvl=7}] hplvl 800
+scoreboard players set @a[scores={hplvl=800}] hpxp 0
+scoreboard players set @a[scores={hplvl=800}] hplvl 8
+execute as @a[scores={hplvl=7}] run attribute @s minecraft:generic.max_health base set 24
+scoreboard players set @a[scores={hpxp=100..,hplvl=8}] hplvl 900
+scoreboard players set @a[scores={hplvl=900}] hpxp 0
+scoreboard players set @a[scores={hplvl=900}] hplvl 9
+execute as @a[scores={hplvl=8}] run attribute @s minecraft:generic.max_health base set 26
+scoreboard players set @a[scores={hpxp=100..,hplvl=9}] hplvl 1000
+scoreboard players set @a[scores={hplvl=1000}] hpxp 0
+scoreboard players set @a[scores={hplvl=1000}] hplvl 10
+execute as @a[scores={hplvl=9}] run attribute @s minecraft:generic.max_health base set 28
+scoreboard players set @a[scores={hpxp=150..,hplvl=10}] hplvl 1100
+scoreboard players set @a[scores={hplvl=1100}] hpxp 0
+scoreboard players set @a[scores={hplvl=1100}] hplvl 11
+execute as @a[scores={hplvl=10}] run attribute @s minecraft:generic.max_health base set 30
+scoreboard players set @a[scores={hpxp=150..,hplvl=11}] hplvl 1200
+scoreboard players set @a[scores={hplvl=1200}] hpxp 0
+scoreboard players set @a[scores={hplvl=1200}] hplvl 12
+execute as @a[scores={hplvl=11}] run attribute @s minecraft:generic.max_health base set 32
+scoreboard players set @a[scores={hpxp=200..,hplvl=12}] hplvl 1300
+scoreboard players set @a[scores={hplvl=1300}] hpxp 0
+scoreboard players set @a[scores={hplvl=1300}] hplvl 13
+execute as @a[scores={hplvl=12}] run attribute @s minecraft:generic.max_health base set 34
+scoreboard players set @a[scores={hpxp=200..,hplvl=13}] hplvl 1400
+scoreboard players set @a[scores={hplvl=1400}] hpxp 0
+scoreboard players set @a[scores={hplvl=1400}] hplvl 14
+execute as @a[scores={hplvl=13}] run attribute @s minecraft:generic.max_health base set 36
+scoreboard players set @a[scores={hpxp=200..,hplvl=14}] hplvl 1500
+scoreboard players set @a[scores={hplvl=1500}] hpxp 0
+scoreboard players set @a[scores={hplvl=1500}] hplvl 15
+execute as @a[scores={hplvl=14}] run attribute @s minecraft:generic.max_health base set 38
+execute as @a[scores={hplvl=15}] run attribute @s minecraft:generic.max_health base set 40
+bossbar set minecraft:hpxp0 players @a[scores={hpxp=0..0,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp1 players @a[scores={hpxp=1..2,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp3 players @a[scores={hpxp=3..3,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp4 players @a[scores={hpxp=4..4,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp5 players @a[scores={hpxp=5..5,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp7 players @a[scores={hpxp=6..6,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp8 players @a[scores={hpxp=7..7,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp9 players @a[scores={hpxp=8..8,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp10 players @a[scores={hpxp=9..9,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp11 players @a[scores={hpxp=10..10,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp13 players @a[scores={hpxp=11..11,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp14 players @a[scores={hpxp=12..12,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp15 players @a[scores={hpxp=13..13,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp17 players @a[scores={hpxp=14..14,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp18 players @a[scores={hpxp=15..15,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp19 players @a[scores={hpxp=16..16,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp20 players @a[scores={hpxp=17..17,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp21 players @a[scores={hpxp=18..18,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp23 players @a[scores={hpxp=19..19,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp24 players @a[scores={hpxp=20..20,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp25 players @a[scores={hpxp=21..21,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp27 players @a[scores={hpxp=22..22,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp28 players @a[scores={hpxp=23..23,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp29 players @a[scores={hpxp=24..24,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp30 players @a[scores={hpxp=25..25,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp31 players @a[scores={hpxp=26..26,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp33 players @a[scores={hpxp=27..27,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp34 players @a[scores={hpxp=28..28,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp35 players @a[scores={hpxp=29..29,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp37 players @a[scores={hpxp=30..30,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp38 players @a[scores={hpxp=31..31,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp39 players @a[scores={hpxp=32..32,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp40 players @a[scores={hpxp=33..33,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp41 players @a[scores={hpxp=34..34,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp43 players @a[scores={hpxp=35..35,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp44 players @a[scores={hpxp=36..36,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp45 players @a[scores={hpxp=37..37,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp47 players @a[scores={hpxp=38..38,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp49 players @a[scores={hpxp=39..,hplvl=0,hpcd=..50}]
+bossbar set minecraft:hpxp50 players @a[scores={hpxp=0..0,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp51 players @a[scores={hpxp=1..1,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp52 players @a[scores={hpxp=2..2,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp53 players @a[scores={hpxp=3..3,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp54 players @a[scores={hpxp=4..4,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp55 players @a[scores={hpxp=5..5,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp56 players @a[scores={hpxp=6..6,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp57 players @a[scores={hpxp=7..7,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp58 players @a[scores={hpxp=8..8,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp59 players @a[scores={hpxp=9..9,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp60 players @a[scores={hpxp=10..10,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp61 players @a[scores={hpxp=11..11,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp62 players @a[scores={hpxp=12..12,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp63 players @a[scores={hpxp=13..13,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp64 players @a[scores={hpxp=14..14,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp65 players @a[scores={hpxp=15..15,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp66 players @a[scores={hpxp=16..16,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp67 players @a[scores={hpxp=17..17,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp68 players @a[scores={hpxp=18..18,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp69 players @a[scores={hpxp=19..19,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp70 players @a[scores={hpxp=20..20,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp71 players @a[scores={hpxp=21..21,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp72 players @a[scores={hpxp=22..22,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp73 players @a[scores={hpxp=23..23,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp74 players @a[scores={hpxp=24..24,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp75 players @a[scores={hpxp=25..25,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp76 players @a[scores={hpxp=26..26,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp77 players @a[scores={hpxp=27..27,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp78 players @a[scores={hpxp=28..28,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp79 players @a[scores={hpxp=29..29,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp80 players @a[scores={hpxp=30..30,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp81 players @a[scores={hpxp=31..31,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp82 players @a[scores={hpxp=32..32,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp83 players @a[scores={hpxp=33..33,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp84 players @a[scores={hpxp=34..34,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp85 players @a[scores={hpxp=35..35,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp86 players @a[scores={hpxp=36..36,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp87 players @a[scores={hpxp=37..37,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp88 players @a[scores={hpxp=38..38,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp89 players @a[scores={hpxp=39..39,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp90 players @a[scores={hpxp=40..40,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp91 players @a[scores={hpxp=41..41,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp92 players @a[scores={hpxp=42..42,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp93 players @a[scores={hpxp=43..43,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp94 players @a[scores={hpxp=44..44,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp95 players @a[scores={hpxp=45..45,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp96 players @a[scores={hpxp=46..46,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp97 players @a[scores={hpxp=47..47,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp98 players @a[scores={hpxp=48..48,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp99 players @a[scores={hpxp=49..,hplvl=1,hpcd=..50}]
+bossbar set minecraft:hpxp100 players @a[scores={hpxp=0..0,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp101 players @a[scores={hpxp=1..1,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp102 players @a[scores={hpxp=2..2,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp103 players @a[scores={hpxp=3..4,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp104 players @a[scores={hpxp=5..5,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp105 players @a[scores={hpxp=6..6,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp106 players @a[scores={hpxp=7..7,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp107 players @a[scores={hpxp=8..8,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp108 players @a[scores={hpxp=9..9,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp109 players @a[scores={hpxp=10..11,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp110 players @a[scores={hpxp=12..12,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp111 players @a[scores={hpxp=13..13,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp112 players @a[scores={hpxp=14..14,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp113 players @a[scores={hpxp=15..16,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp114 players @a[scores={hpxp=17..17,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp115 players @a[scores={hpxp=18..18,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp116 players @a[scores={hpxp=19..19,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp117 players @a[scores={hpxp=20..20,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp118 players @a[scores={hpxp=21..21,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp119 players @a[scores={hpxp=22..23,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp120 players @a[scores={hpxp=24..24,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp121 players @a[scores={hpxp=25..25,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp122 players @a[scores={hpxp=26..26,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp123 players @a[scores={hpxp=27..28,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp124 players @a[scores={hpxp=29..29,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp125 players @a[scores={hpxp=30..30,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp126 players @a[scores={hpxp=31..31,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp127 players @a[scores={hpxp=32..32,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp128 players @a[scores={hpxp=33..33,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp129 players @a[scores={hpxp=34..35,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp130 players @a[scores={hpxp=36..36,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp131 players @a[scores={hpxp=37..37,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp132 players @a[scores={hpxp=38..38,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp133 players @a[scores={hpxp=39..40,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp134 players @a[scores={hpxp=41..41,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp135 players @a[scores={hpxp=42..42,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp136 players @a[scores={hpxp=43..43,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp137 players @a[scores={hpxp=44..44,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp138 players @a[scores={hpxp=45..45,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp139 players @a[scores={hpxp=46..47,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp140 players @a[scores={hpxp=48..48,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp141 players @a[scores={hpxp=49..49,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp142 players @a[scores={hpxp=50..50,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp143 players @a[scores={hpxp=51..52,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp144 players @a[scores={hpxp=53..53,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp145 players @a[scores={hpxp=54..54,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp146 players @a[scores={hpxp=55..55,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp147 players @a[scores={hpxp=56..56,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp148 players @a[scores={hpxp=57..57,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp149 players @a[scores={hpxp=58..,hplvl=2,hpcd=..50}]
+bossbar set minecraft:hpxp150 players @a[scores={hpxp=0..0,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp151 players @a[scores={hpxp=1..1,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp152 players @a[scores={hpxp=2..3,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp153 players @a[scores={hpxp=4..4,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp154 players @a[scores={hpxp=5..5,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp155 players @a[scores={hpxp=6..7,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp156 players @a[scores={hpxp=8..8,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp157 players @a[scores={hpxp=9..10,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp158 players @a[scores={hpxp=11..11,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp159 players @a[scores={hpxp=12..12,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp160 players @a[scores={hpxp=13..14,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp161 players @a[scores={hpxp=15..15,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp162 players @a[scores={hpxp=16..17,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp163 players @a[scores={hpxp=18..18,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp164 players @a[scores={hpxp=19..19,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp165 players @a[scores={hpxp=20..21,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp166 players @a[scores={hpxp=22..22,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp167 players @a[scores={hpxp=23..24,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp168 players @a[scores={hpxp=25..25,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp169 players @a[scores={hpxp=26..26,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp170 players @a[scores={hpxp=27..28,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp171 players @a[scores={hpxp=29..29,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp172 players @a[scores={hpxp=30..31,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp173 players @a[scores={hpxp=32..32,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp174 players @a[scores={hpxp=33..33,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp175 players @a[scores={hpxp=34..35,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp176 players @a[scores={hpxp=36..36,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp177 players @a[scores={hpxp=37..38,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp178 players @a[scores={hpxp=39..39,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp179 players @a[scores={hpxp=40..40,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp180 players @a[scores={hpxp=41..42,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp181 players @a[scores={hpxp=43..43,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp182 players @a[scores={hpxp=44..45,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp183 players @a[scores={hpxp=46..46,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp184 players @a[scores={hpxp=47..47,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp185 players @a[scores={hpxp=48..49,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp186 players @a[scores={hpxp=50..50,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp187 players @a[scores={hpxp=51..52,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp188 players @a[scores={hpxp=53..53,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp189 players @a[scores={hpxp=54..54,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp190 players @a[scores={hpxp=55..56,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp191 players @a[scores={hpxp=57..57,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp192 players @a[scores={hpxp=58..59,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp193 players @a[scores={hpxp=60..60,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp194 players @a[scores={hpxp=61..61,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp195 players @a[scores={hpxp=62..63,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp196 players @a[scores={hpxp=64..64,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp197 players @a[scores={hpxp=65..66,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp198 players @a[scores={hpxp=67..67,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp199 players @a[scores={hpxp=68..,hplvl=3..7,hpcd=..50}]
+bossbar set minecraft:hpxp200 players @a[scores={hpxp=0..0,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp201 players @a[scores={hpxp=1..2,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp202 players @a[scores={hpxp=3..3,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp203 players @a[scores={hpxp=4..6,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp204 players @a[scores={hpxp=7..7,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp205 players @a[scores={hpxp=8..10,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp206 players @a[scores={hpxp=11..11,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp207 players @a[scores={hpxp=12..14,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp208 players @a[scores={hpxp=15..15,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp209 players @a[scores={hpxp=16..18,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp210 players @a[scores={hpxp=19..19,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp211 players @a[scores={hpxp=20..22,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp212 players @a[scores={hpxp=23..23,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp213 players @a[scores={hpxp=24..26,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp214 players @a[scores={hpxp=27..27,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp215 players @a[scores={hpxp=28..30,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp216 players @a[scores={hpxp=31..31,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp217 players @a[scores={hpxp=32..34,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp218 players @a[scores={hpxp=35..35,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp219 players @a[scores={hpxp=36..38,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp220 players @a[scores={hpxp=39..39,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp221 players @a[scores={hpxp=40..42,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp222 players @a[scores={hpxp=43..43,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp223 players @a[scores={hpxp=44..46,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp224 players @a[scores={hpxp=47..47,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp225 players @a[scores={hpxp=48..50,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp226 players @a[scores={hpxp=51..51,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp227 players @a[scores={hpxp=52..54,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp228 players @a[scores={hpxp=55..55,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp229 players @a[scores={hpxp=56..58,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp230 players @a[scores={hpxp=59..59,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp231 players @a[scores={hpxp=60..62,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp232 players @a[scores={hpxp=63..63,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp233 players @a[scores={hpxp=64..66,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp234 players @a[scores={hpxp=67..67,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp235 players @a[scores={hpxp=68..70,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp236 players @a[scores={hpxp=71..71,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp237 players @a[scores={hpxp=72..74,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp238 players @a[scores={hpxp=75..75,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp239 players @a[scores={hpxp=76..78,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp240 players @a[scores={hpxp=79..79,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp241 players @a[scores={hpxp=80..82,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp242 players @a[scores={hpxp=83..83,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp243 players @a[scores={hpxp=84..86,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp244 players @a[scores={hpxp=87..87,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp245 players @a[scores={hpxp=88..90,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp246 players @a[scores={hpxp=91..91,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp247 players @a[scores={hpxp=92..94,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp248 players @a[scores={hpxp=95..95,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp249 players @a[scores={hpxp=96..,hplvl=8..9,hpcd=..50}]
+bossbar set minecraft:hpxp250 players @a[scores={hpxp=0..0,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp251 players @a[scores={hpxp=1..2,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp252 players @a[scores={hpxp=3..5,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp253 players @a[scores={hpxp=6..8,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp254 players @a[scores={hpxp=9..11,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp255 players @a[scores={hpxp=12..14,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp256 players @a[scores={hpxp=15..17,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp257 players @a[scores={hpxp=18..20,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp258 players @a[scores={hpxp=21..23,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp259 players @a[scores={hpxp=24..26,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp260 players @a[scores={hpxp=27..29,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp261 players @a[scores={hpxp=30..32,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp262 players @a[scores={hpxp=33..35,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp263 players @a[scores={hpxp=36..38,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp264 players @a[scores={hpxp=39..41,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp265 players @a[scores={hpxp=42..44,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp266 players @a[scores={hpxp=45..47,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp267 players @a[scores={hpxp=48..50,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp268 players @a[scores={hpxp=51..53,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp269 players @a[scores={hpxp=54..56,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp270 players @a[scores={hpxp=57..59,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp271 players @a[scores={hpxp=60..62,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp272 players @a[scores={hpxp=63..65,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp273 players @a[scores={hpxp=66..68,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp274 players @a[scores={hpxp=69..71,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp275 players @a[scores={hpxp=72..74,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp276 players @a[scores={hpxp=75..77,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp277 players @a[scores={hpxp=78..80,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp278 players @a[scores={hpxp=81..83,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp279 players @a[scores={hpxp=84..86,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp280 players @a[scores={hpxp=87..89,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp281 players @a[scores={hpxp=90..92,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp282 players @a[scores={hpxp=93..95,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp283 players @a[scores={hpxp=96..98,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp284 players @a[scores={hpxp=99..101,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp285 players @a[scores={hpxp=102..104,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp286 players @a[scores={hpxp=105..107,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp287 players @a[scores={hpxp=108..110,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp288 players @a[scores={hpxp=111..113,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp289 players @a[scores={hpxp=114..116,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp290 players @a[scores={hpxp=117..119,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp291 players @a[scores={hpxp=120..122,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp292 players @a[scores={hpxp=123..125,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp293 players @a[scores={hpxp=126..128,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp294 players @a[scores={hpxp=129..131,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp295 players @a[scores={hpxp=132..134,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp296 players @a[scores={hpxp=135..137,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp297 players @a[scores={hpxp=138..140,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp298 players @a[scores={hpxp=141..143,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp299 players @a[scores={hpxp=144..,hplvl=10..11,hpcd=..50}]
+bossbar set minecraft:hpxp300 players @a[scores={hpxp=0..0,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp301 players @a[scores={hpxp=1..3,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp302 players @a[scores={hpxp=4..6,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp303 players @a[scores={hpxp=7..11,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp304 players @a[scores={hpxp=12..14,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp305 players @a[scores={hpxp=15..19,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp306 players @a[scores={hpxp=20..22,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp307 players @a[scores={hpxp=23..27,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp308 players @a[scores={hpxp=28..30,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp309 players @a[scores={hpxp=31..35,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp310 players @a[scores={hpxp=36..38,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp311 players @a[scores={hpxp=39..43,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp312 players @a[scores={hpxp=44..46,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp313 players @a[scores={hpxp=47..51,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp314 players @a[scores={hpxp=52..54,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp315 players @a[scores={hpxp=55..59,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp316 players @a[scores={hpxp=60..62,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp317 players @a[scores={hpxp=63..67,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp318 players @a[scores={hpxp=68..70,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp319 players @a[scores={hpxp=71..75,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp320 players @a[scores={hpxp=76..78,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp321 players @a[scores={hpxp=79..83,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp322 players @a[scores={hpxp=84..86,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp323 players @a[scores={hpxp=87..91,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp324 players @a[scores={hpxp=92..94,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp325 players @a[scores={hpxp=95..99,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp326 players @a[scores={hpxp=100..102,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp327 players @a[scores={hpxp=103..107,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp328 players @a[scores={hpxp=108..110,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp329 players @a[scores={hpxp=111..115,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp330 players @a[scores={hpxp=116..118,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp331 players @a[scores={hpxp=119..123,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp332 players @a[scores={hpxp=124..126,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp333 players @a[scores={hpxp=127..131,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp334 players @a[scores={hpxp=132..134,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp335 players @a[scores={hpxp=135..139,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp336 players @a[scores={hpxp=140..142,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp337 players @a[scores={hpxp=143..147,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp338 players @a[scores={hpxp=148..150,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp339 players @a[scores={hpxp=151..155,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp340 players @a[scores={hpxp=156..158,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp341 players @a[scores={hpxp=159..163,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp342 players @a[scores={hpxp=164..166,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp343 players @a[scores={hpxp=167..171,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp344 players @a[scores={hpxp=172..174,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp345 players @a[scores={hpxp=175..179,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp346 players @a[scores={hpxp=180..182,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp347 players @a[scores={hpxp=183..187,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp348 players @a[scores={hpxp=188..190,hplvl=12..14,hpcd=..50}]
+bossbar set minecraft:hpxp349 players @a[scores={hpxp=191..,hplvl=12..14,hpcd=..50}]
