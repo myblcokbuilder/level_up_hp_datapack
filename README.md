@@ -3,6 +3,7 @@
  
  <img src="https://github.com/Woflje/level_up_hp_datapack/blob/vanilla-1.16.5/pack.png">
  This branch is for Minecraft 1.16.5, and can be installed by placing the 'Wofljes_Level_Up_HP.zip' file in your Minecraft world's 'datapack' folder.
+ It is tested only for 1.16.5, but it should work fine with future Minecraft versions that share the same commandblock syntax.
 
  This datapack was made to resemble the [Level Up HP!](https://www.curseforge.com/minecraft/mc-mods/level-up-hp-forge) mod for 1.16.5.
 
