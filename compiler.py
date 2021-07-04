@@ -6,7 +6,11 @@ total_kills='totk'
 hp_max_tag='hpmax'
 hp_level='hplvl'
 
+start_with_hearts=5
+end_with_hearts=20
 num_bossbars=50
+
+#array should have end_with_hearts - start_with_hearts entries
 hp_xp_per_level=[40,50,60,70,70,70,70,70,100,100,150,150,200,200,200]
 same=1
 sames=[]
@@ -45,8 +49,8 @@ for i in range(0,len(hp_xp_per_level)):
 	tick_code+='scoreboard players set @a[scores={'+hp_xp+'='+str(hp_xp_per_level[i])+'..,'+hp_level+'='+str(i)+'}] '+hp_level+' '+str(100*(i+1))+'\n'
 	tick_code+='scoreboard players set @a[scores={'+hp_level+'='+str(100*(i+1))+'}] '+hp_xp+' 0\n'
 	tick_code+='scoreboard players set @a[scores={'+hp_level+'='+str(100*(i+1))+'}] '+hp_level+' '+str(i+1)+'\n'
-	tick_code+='execute as @a[scores={'+hp_level+'='+str(i)+'}] run attribute @s minecraft:generic.max_health base set '+str(10+(2*i))+'\n'
-tick_code+='execute as @a[scores={'+hp_level+'=15}] run attribute @s minecraft:generic.max_health base set 40\n'
+	tick_code+='execute as @a[scores={'+hp_level+'='+str(i)+'}] run attribute @s minecraft:generic.max_health base set '+str((start_with_hearts*2)+(2*i))+'\n'
+tick_code+='execute as @a[scores={'+hp_level+'='+str(len(hp_xp_per_level))+'}] run attribute @s minecraft:generic.max_health base set '+str(end_with_hearts*2)+'\n'
 
 minxp=0
 prev=0
