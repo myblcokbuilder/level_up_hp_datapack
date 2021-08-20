@@ -1,3 +1,8 @@
+from zipfile import ZipFile
+import os
+from os.path import basename
+
+print("Compiling Level Up HP! Datapack")
 hp_initialized_tag='hpinit'
 hp_xp='hpxp'
 hp_bossbar_cooldown='hpcd'
@@ -80,9 +85,23 @@ for samecount in range(0,len(sames)):
 	level_index+=sames[samecount]
 	hadbossbars=50*(samecount+1)
 
+print("Writing load.mcfunction...")
 load_file = open("data/health/functions/load.mcfunction","w")
 load_file.write(load_code)
 load_file.close()
+print("Writing tick.mcfunction...")
 tick_file = open("data/health/functions/tick.mcfunction","w")
 tick_file.write(tick_code)
 tick_file.close()
+print("Updating datapack zipfile...")
+try:
+	os.remove('Wofljes_Level_Up_HP.zip')
+except:
+	print("Cannot remove datapack zipfile: Not found!")
+with ZipFile("Wofljes_Level_Up_HP.zip",'w') as zf:
+	for folderName, subfolders, filenames in os.walk("data"):
+		for filename in filenames:
+			filePath = os.path.join(folderName,filename)
+			zf.write(filePath, filePath)
+zf.close()
+print("Finished compiling datapack!")
