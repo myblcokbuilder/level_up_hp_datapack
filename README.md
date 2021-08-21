@@ -8,4 +8,4 @@
  This datapack was made to resemble the [Level Up HP!](https://www.curseforge.com/minecraft/mc-mods/level-up-hp-forge) mod for 1.16.5.
 
 ## Customization
- To customize any values such as the starting HP, the max HP or the required kills per level up, you can change the parameters at the top of the 'compiler.py' file to your likings and run the python file. This will modify the files in the data folder, which you then have to put in a zip file together with 'pack.mcmeta' and 'pack.png'.
+ To customize any values such as the starting HP, the max HP or the required kills per level up, you can change the parameters at the top of the 'compiler.py' file to your likings and run the python file. This will modify the files in the data folder, and update the datapack file.
